@@ -14,19 +14,19 @@ function ArrayOperations() {
 
   return (
     <>
-      <div class="card border-light bg-transparent m-2">
-        <div class="card-body">
-          <h4 class="card-title">ArrayOperations</h4>
-          <p class="card-text">
+      <div className="card border-light bg-transparent m-2">
+        <div className="card-body">
+          <h4 className="card-title">ArrayOperations</h4>
+          <p className="card-text">
             {myArray.map((number, index) => {
               return <span key={index}>{number}, </span>;
             })}
           </p>
         </div>
       </div>
-      <div class="card border-primary bg-transparent">
-        <div class="card-body">
-          <h4 class="card-title">Input value</h4>
+      <div className="card border-primary bg-transparent">
+        <div className="card-body">
+          <h4 className="card-title">Input value</h4>
           <input type="text" onInput={(e) => setNumber(e.target.value)} />
           <br />
           <button
